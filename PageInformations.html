@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
+    <title>Dataviz - Évolution du droit à l'avortement en Europe - Informations</title>
+</head>
+<body>
+    <a id="retour" href="index.html">← Retour</a>
+    <h1>Informations sur le projet</h1>
+
+    <main>
+        <h2>Le concept</h2>
+        <p>
+            Le but de ce site est de visualiser l'évolution des lois sur le droit à l'avortement en Europe.
+            Pour une visualisation simple, nous avons mis en place un code couleur pour que l'utilisateur comprenne en un coup d'œil la situation dans chaque pays en fonction de l'année.
+        </p>
+        <h2>Qui sommes-nous ?</h2>
+        <p>
+            Nous sommes trois étudiantes en B.U.T MMI à Champs-sur-Marne : Estelle FABERT, Emy BIGIRIMANA et Jeanne BESOMBES.
+            C'est dans le cadre d'un projet d'études que nous avons créé ce site nous-mêmes.
+            Pour en savoir plus sur MMI : <a href="http://www.dut-mmi-champs.fr/">la formation MMI</a>
+        </p>
+        <h2>Nos sources :</h2>
+        <p>
+            La carte : <a href="https://leafletjs.com/examples/choropleth/">Leaflet</a><br>
+            La majeure partie du code est une version adaptée à ce projet du tutoriel Interactive Choropleth Map du site leafletjs.com de Volodymyr Agafonkin, que vous pouvez trouver ici : <a href="https://leafletjs.com/examples/choropleth/">https://leafletjs.com/examples/choropleth/</a>.<br>
+            La base de données Geojson a été quant à elle été tirée de ce site créé par @ashkyd <a href="https://geojson-maps.ash.ms/">https://geojson-maps.ash.ms/</a>, qui permet de générer des fichiers geojson avec les coordonnées des pays sélectionnés.<br>
+            Cette base de donnée a été complétée manuellement à l'aide de diverses recherches, notamment sur Wikipédia, que nous avons complétées et croisées avec des articles de presse glanés sur Internet.
+        </p>
+        <h2>Mentions légales</h2>
+        <ul>
+            <li>Développement : Jeanne BESOMBES</li>            
+            <li>Design : Estelle FABERT</li>
+            <li>Écriture : Emy BIGIRIMANA</li>
+            <br>
+        </ul>
+    </main>
+    
+</body>
+
+<style>
+    *::after{
+        box-sizing: border-box;
+    }
+    h1{
+        text-align: center;
+        font-family:  'Catamaran', sans-serif;
+        font-size: 2.5rem;
+        margin: 0;
+    }
+    #retour {
+        position: fixed;
+        top: 0;
+        text-decoration: none;
+        color: #0c0c0c;
+        font-family: 'catamaran';
+        font-weight: 900;
+    }
+    #retour:hover{
+        text-decoration: underline;
+        font-size: larger;
+    }
+    a:hover{
+        font-weight: 900;
+    }
+    main{
+        position: relative;
+        background-color: #c5e8ff;
+        border-radius: 20px;
+        margin: 2% 5% 0% 5%;
+        padding: 1% 5%;
+        font-family:  'Catamaran', sans-serif;
+    }
+    ul{
+        list-style-type: none;
+      }
+</style>
+</html>
